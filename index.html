@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width = 100" , initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <input id="display" type="text" placeholder="0" />
+
+        <button onclick="getInput('7')">7</button>
+        <button onclick="getInput('8')">8</button>
+        <button onclick="getInput('9')">9</button>
+        <button id="del" onclick="deleteDigit()">DEL</button>
+        <button onclick="getInput('4')">4</button>
+        <button onclick="getInput('5')">5</button>
+        <button onclick="getInput('6')">6</button>
+        <button onclick="getInput('+')">+</button>
+        <button onclick="getInput('1')">1</button>
+        <button onclick="getInput('2')">2</button>
+        <button onclick="getInput('3')">3</button>
+        <button onclick="getInput('-')">-</button>
+        <button onclick="getInput('0')">0</button>
+        <button onclick="getInput('/')">/</button>
+        <button onclick="getInput('x')">x</button>
+        <button onclick="getInput('.')">.</button>
+        <button id="reset" onclick="allclear()">RESET</button>
+        <button id="eq" onclick="result()">=</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
